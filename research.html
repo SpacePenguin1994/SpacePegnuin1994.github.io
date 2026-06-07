@@ -1,177 +1,1077 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <meta name="description" content="Research by Qizhe Yang">
+    <meta name="description" content="Research and publications by Qizhe Yang">
     <meta name="author" content="Qizhe Yang">
-
-    <meta name="keywords" content="To be determined " />
-
+    <meta name="keywords" content="Qizhe Yang, VASS, Vector Addition Systems, Computer Vision, Trustworthy AI, SHNU, formal verification">
     <link rel="shortcut icon" type="image/x-icon" href="siteicon.ico">
-
     <title>Qizhe Yang - Research</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
+    <!-- Font Awesome -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Additional Settings -->
-    <link href="css/kthohr_settings.css" rel="stylesheet">
-
-    <!--script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-93902857-1', 'auto');
-    ga('send', 'pageview');
-
-    </script-->
+    <!-- Chelsea Blue Theme -->
+    <link href="css/style.css" rel="stylesheet">
 
     <script src="js/jquery.js"></script>
-    <script>
-        $(function(){
-            $("#mynavbar").load("navbar.html")
-            $("#myfooter").load("footer.html")
-        });
-    </script>
-
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <div id="mynavbar"></div>
-
+<!-- Navigation -->
+<nav class="navbar navbar-chelsea navbar-fixed-top" role="navigation">
     <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Qizhe Yang</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a href="index.html">Home</a>
+                </li>
+                <li >
+                    <a href="about.html">About</a>
+                </li>
+                <li class="active">
+                    <a href="research.html">Research</a>
+                </li>
+                <li >
+                    <a href="teaching.html">Teaching</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <!-- Features Section -->
-        <div class="row">
+<!-- Main Content -->
+<div class="container">
+    
+<div class="page-section">
 
-            <div class="col-md-2"></div>
+    
+    
+    
+    
 
-            <div class="col-md-8">
-                <h2 class="page-header"> Publications </h2>
-                <div class="panel panel-default">
+    <h1 class="section-heading">Infinite-State Systems & VASS</h1>
+
+    
+    <div class="area-intro"><p>I study the reachability problem and related decision problems for <strong>Vector Addition Systems with States (VASS)</strong>, with a focus on low-dimensional instances and their complexity. My work establishes tight complexity bounds within the Grzegorczyk hierarchy and introduces geometric notions of dimension to extend these results.</p></div>
+    
+
+    
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>AC4: Algebraic Computation Checker for Circuit Constraints in Zero-Knowledge Proofs</h4>
+            <p class="pub-authors">
+                
+                
                     
-                    <div class="panel-heading">
-                        <h4>Reachability in Geometrically -Dimensional VASS</h4>
-                        <h5>(with <a href="https://basics.sjtu.edu.cn/~yuxi/" target="_blank">Yuxi Fu</a> and Yangluo Zheng)</h5>
-                         <h5><em><a href="hhttps://arxiv.org/abs/2504.12302" target="_blank">arXiv:2504.12302</a></h5>
-                        <hr style="height:2px;border-width:0;background-color:black" />
-                        <!-- <hr /> docs/Doppelt_OHara_FIVARs.pdf -->
-                        <h4><strong style="font-size: 90%;"><a data-toggle="collapse" href="#collapse1">Abstract</a> | <a href="docs/dvass.pdf" target="_blank">Paper</a> </strong></h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>Reachability of vector addition systems with states (VASS) is Ackermann complete. For d-dimensional VASS reachability it is known that the problem is NP-complete when d=1 , PSPACE-complete when d =2 , and in F_d when d > 2 . A geometrically d-dimensional VASS is a D-dimensional VASS for some D\geq d such that the space spanned by the displacements of the circular paths admitted in the D-dimensional VASS is d-dimensional. It is proved that the F_d upper bounds remain valid for the reachability problem in the geometrically d-dimensional VASSes with d>2.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="panel-heading">
-                        <h4>Improved Algorithm for Reachability in d-VASS</h4>
-                        <h5>(with <a href="https://basics.sjtu.edu.cn/~yuxi/" target="_blank">Yuxi Fu</a> and Yangluo Zheng)</h5>
-                        <h5><em>In Proceedings of the 51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024), Volume 297, pp. 136:1-136:18,2024</em></h5>
-                        <hr style="height:2px;border-width:0;background-color:black" />
-                        <!-- <hr /> docs/Doppelt_OHara_FIVARs.pdf -->
-                        <h4><strong style="font-size: 90%;"><a data-toggle="collapse" href="#collapse1">Abstract</a> | <a href="docs/dvass.pdf" target="_blank">Paper</a> </strong></h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>An Fd upper bound for the reachability problem in vector addition systems with states (VASS) in fixed dimension is given, where Fd is the d-th level of the Grzegorczyk hierarchy of complexity classes. The new algorithm combines the idea of the linear path scheme characterization of the reachability in the 2-dimension VASSes with the general decomposition algorithm by Mayr, Kosaraju and Lambert. The result improves the Fd+4 upper bound due to Leroux and Schmitz (LICS 2019).
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="panel-heading">
-                        <h4>Branching Bisimulation Semantics for Quantum Processes</h4>
-                        <h5>(with <a href="https://basics.sjtu.edu.cn/~longhuan/" target="_blank">Huan Long</a> and Hao Wu)</h5>
-                        <h5><em>Information Processing Letters, Volume 186, August 2024, 106492, 2024</em></h5>
-                        <hr style="height:2px;border-width:0;background-color:black" />
-                        <!-- <hr /> docs/Doppelt_OHara_FIVARs.pdf -->
-                        <h4><strong style="font-size: 90%;"><a data-toggle="collapse" href="#collapse2">Abstract</a> | <a href="docs/quantumbisi.pdf" target="_blank">Paper</a> </strong></h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>The qCCS model proposed by Feng et al. provides a powerful framework to describe and reason about quantum communication systems that could be entangled with the environment. However, they only studied weak bisimulation semantics. In this paper we propose a new branching bisimilarity for qCCS and show that it is a congruence. The new bisimilarity is based on the concept of ϵ-tree and preserves the branching structure of concurrent processes where both quantum and classical components are allowed. Furthermore, we present a polynomial time equivalence checking algorithm for the ground version of our branching bisimilarity.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h4>Reachability in 3-VASS is in Tower</h4>
-                        <h5>(with <a href="https://basics.sjtu.edu.cn/~yuxi/" target="_blank">Yuxi Fu</a>)</h5>
-                        <h5><em><a href="https://arxiv.org/abs/2306.05710" target="_blank">arXiv:2306.05710</a></h5>
-                        <hr style="height:2px;border-width:0;background-color:black" />
-                        <!-- <hr /> docs/Doppelt_OHara_FIVARs.pdf -->
-                        <h4><strong style="font-size: 90%;"><a data-toggle="collapse" href="#collapse3">Abstract</a> | <a href="docs/3vass.pdf" target="_blank">Paper</a> </strong></h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>The reachability problem for vector addition systems with states (VASS) is Ackermann-complete.
-                                For every k ≥ 3, a completeness result for the k-dimensional VASS reachability problem is not yet
-                                available. It is shown in this paper that the 3-dimensional VASS reachability problem is in Tower,
-                                improving upon the current best upper bound F7 established by Leroux and Schmidt in 2019.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h4>The Study of Vector Addition System</h4>
-                        <h5><em>Phd. Thesis</em></h5>
-                        <hr style="height:2px;border-width:0;background-color:black" />
-                        <!-- <hr /> docs/Doppelt_OHara_FIVARs.pdf -->
-                        <h4><strong style="font-size: 90%;"><a data-toggle="collapse" href="#collapse4">Abstract</a> | <a href="docs/thesis.pdf" target="_blank">Paper</a> </strong></h4>
-                    </div>
-                    <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>This thesis first focuses on the vector addition system. Based on the discussion of the existing work, we propose some new understanding of the reachability problem, which will help future research. Next, we focus on the nondeterministic computation, we will carry out quantitative study of the complexity of nondeterminism. AS far as we know, this is the first of it kind. The main contributions of the thesis are the follows:
-                            <ul>
-                                <li> First we summarize the existing work of VAS in the recent 60 years including reachability problem, coverability problem and boundedness problem. Especially for the lower bound of reachability problem, we compare with different techniques, which will help some related ver- ification problems in other models.</li>
-                                <li> Next for the famous KLMST algorithm, we offer a new understanding of the algorithm, i.e. by the form of decomposition-dimension reduction-decomposition-· · · . In this way we try to build a relationship between the reachability problem for (𝑛 + 1)-dimensional VAS and the reachability problem for 𝑛-dimensional VAS, which we believe will contributes to efforts in the reachability problem for fixed dimension. </li>
-                                <li>  Finally for the abstract presentation of finite state computational objects C-graphs, we introduce the concept of height, which characterizes the maximal number of steps a computational object may engage. Then we give a recursive equality of the number of the C-graphs of height , and prove that its growth rate is non-elementary. This result classifies the worst case branching time complexity.</li>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="panel-heading">
-                        <h4>Counting nondeterministic computations</h4>
-                        <h5>(with <a href="https://basics.sjtu.edu.cn/~yuxi/" target="_blank">Yuxi Fu</a>)</h5>
-                        <h5><em>Theoretical Computer Science, Volume 897, 2 January 2022, Pages 49-63, 2022</em></h5>
-                        <hr style="height:2px;border-width:0;background-color:black" />
-                        <!-- <hr /> docs/Doppelt_OHara_FIVARs.pdf -->
-                        <h4><strong style="font-size: 90%;"><a data-toggle="collapse" href="#collapse5">Abstract</a> | <a href="docs/CountingNondeterministicComputations.pdf" target="_blank">Paper</a> </strong></h4>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>The structure of nondeterministic computations is extremely complicated. C-graphs are abstract representations of the branching structure of nondeterministic computations. The paper investigates the structure of finite state nondeterministic computations by showing that the complexity of the structure increases non-elementarily while the number of computation steps increases. This is achieved by establishing a recursive equation relating the number of C-graphs of a certain height to the number of C-graphs of smaller height.</p>
-                        </div>
-                    </div>
-                </div>
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                <strong>Qizhe Yang</strong>, Boxuan Liang, Hao Chen, Guoqiang Li<sup>†</sup>
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2026</span>
+                Formal Aspects of Computing, vol. 38, no. 1, pp. 11:1–11:20, March 2026
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-1">Abstract</a>
+                
+                
+                
             </div>
         </div>
-
-        <!-- /.row -->
-
+        
+        <div class="pub-abstract" id="abstract-1-1">
+            Zero-knowledge proof (ZKP) systems have surged attention and held a fundamental role in contemporary cryptography. Zero-knowledge succinct non-interactive argument of knowledge (zk-SNARK) protocols dominate the ZKP usage, implemented through arithmetic circuit programming paradigm. However, underconstrained or overconstrained circuits may lead to bugs. The former refers to circuits that lack the necessary constraints, resulting in unexpected solutions and causing the verifier to accept a bogus witness, and the latter refers to circuits that are constrained excessively, resulting in lacking necessary solutions and causing the verifier to accept no witness. This article introduces a novel approach for pinpointing two distinct types of bugs in ZKP circuits. The method involves encoding the arithmetic circuit constraints to polynomial equation systems and solving them over finite fields by the computer algebra system. The classification of verification results is refined, greatly enhancing the expressive power of the system. A tool, AC4, is proposed to represent the implementation of the method. Experiments show that AC4 demonstrates an increase in the solved rate, showing a 36.7% improvement over Picus and CIVER, and a slight improvement over halo2-analyzer, a checker for halo2 circuits. Within a solvable range, the checking time has also exhibited noticeable improvement, demonstrating a magnitude increase compared to previous efforts.
+        </div>
+        
     </div>
     
-    <div id="myfooter"></div>
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Reachability in Geometrically d-Dimensional VASS</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Yuxi Fu, <strong>Qizhe Yang</strong>, Yangluo Zheng
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2025</span>
+                arXiv:2504.12302
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-2">Abstract</a>
+                
+                
+                <a href="docs/dvass.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o"></i> PDF
+                </a>
+                
+                
+                <a href="https://arxiv.org/abs/2504.12302" target="_blank">arXiv</a>
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-2">
+            Reachability of vector addition systems with states (VASS) is Ackermann complete. For d-dimensional VASS reachability it is known that the problem is NP-complete when d=1, PSPACE-complete when d=2, and in F_d when d>2. A geometrically d-dimensional VASS is a D-dimensional VASS for some D≥d such that the space spanned by the displacements of the circular paths admitted in the D-dimensional VASS is d-dimensional. It is proved that the F_d upper bounds remain valid for the reachability problem in the geometrically d-dimensional VASSes with d>2.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>BPPChecker: An SMT-based Model Checker on Basic Parallel Processes</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                        
+                    
+                    
+                        
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                        
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Guoqiang Li<sup>#</sup><sup>†</sup>, <strong>Qizhe Yang</strong><sup>#</sup>, Jinhao Tan, Ying Zhao
+            </p>
+            
+            <p class="pub-notation">
+                <sup>#</sup>Co-first author
+                 &nbsp;&middot;&nbsp; 
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2025</span>
+                Formal Aspects of Computing, vol. 37, no. 3, Article 21, 2025
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-3">Abstract</a>
+                
+                
+                
+                <a href="https://arxiv.org/abs/2110.09414" target="_blank">arXiv</a>
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-3">
+            Due to the general undecidable results, verification of concurrent programs is a big challenge. Most existing verifiers adopt Petri net and its extensions based on abstraction and approximation as their verification models, which yet suffer from intractable complexity and are thus challenging to be efficient and complete. We choose Basic Parallel Process (BPP), a subclass of Petri nets, as the backbone verification model for verifying concurrent programs due to its lower complexity. We propose BPPChecker, the first model checker for verifying a subclass of CTL on BPP. A constraint-based algorithm is given in which formulas are handled by SMT solver Z3. Our approach involves introducing a k-step semantics for the EG operator. By doing so, we reduce the problem of deciding the satisfiability of EG-formulas and EF1-formulas to the problem of deciding the satisfiability of linear integer arithmetic formulas. Besides, we encode the Actor Communicating System (ACS), a program model for asynchronously communicating programs, to BPP. Experimental results show that BPPChecker performs more efficiently than the existing tools for a series of branching-time property verification problems of Erlang programs.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Improved Algorithm for Reachability in d-VASS</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Yuxi Fu, <strong>Qizhe Yang</strong>, Yangluo Zheng
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2024</span>
+                Proceedings of the 51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024), Volume 297, pp. 136:1–136:18
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-4">Abstract</a>
+                
+                
+                <a href="docs/dvass.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o"></i> PDF
+                </a>
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-4">
+            An F_d upper bound for the reachability problem in vector addition systems with states (VASS) in fixed dimension is given, where F_d is the d-th level of the Grzegorczyk hierarchy of complexity classes. The new algorithm combines the idea of the linear path scheme characterization of the reachability in the 2-dimension VASSes with the general decomposition algorithm by Mayr, Kosaraju and Lambert. The result improves the F_{d+4} upper bound due to Leroux and Schmitz (LICS 2019).
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Branching Bisimulation Semantics for Quantum Processes</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Huan Long, <strong>Qizhe Yang</strong>, Hao Wu
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2024</span>
+                Information Processing Letters, Volume 186, August 2024, 106492
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-5">Abstract</a>
+                
+                
+                <a href="docs/quantumbisi.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o"></i> PDF
+                </a>
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-5">
+            The qCCS model proposed by Feng et al. provides a powerful framework to describe and reason about quantum communication systems that could be entangled with the environment. However, they only studied weak bisimulation semantics. In this paper we propose a new branching bisimilarity for qCCS and show that it is a congruence. The new bisimilarity is based on the concept of ε-tree and preserves the branching structure of concurrent processes where both quantum and classical components are allowed. Furthermore, we present a polynomial time equivalence checking algorithm for the ground version of our branching bisimilarity.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Reachability in 3-VASS is in Tower</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                Yuxi Fu, <strong>Qizhe Yang</strong>
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2023</span>
+                arXiv:2306.05710
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-6">Abstract</a>
+                
+                
+                <a href="docs/3vass.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o"></i> PDF
+                </a>
+                
+                
+                <a href="https://arxiv.org/abs/2306.05710" target="_blank">arXiv</a>
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-6">
+            The reachability problem for vector addition systems with states (VASS) is Ackermann-complete. For every k≥3, a completeness result for the k-dimensional VASS reachability problem is not yet available. It is shown in this paper that the 3-dimensional VASS reachability problem is in Tower, improving upon the current best upper bound F_7 established by Leroux and Schmidt in 2019.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>On Probabilistic Extension of the Interaction Theory</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                Hongmeng Wang, Huan Long<sup>†</sup>, Hao Wu, <strong>Qizhe Yang</strong>
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2022</span>
+                ICFEM 2022, pp. 352–369
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-7">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-7">
+            In this paper, we propose a uniform interaction theory that covers both classical and randomized models. Under this framework, two basic relations, the equality relation within a model and the expressiveness relation between different models, are restudied. We also give an interesting comparison between the world of classical models and the world of randomized models.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>The Study of Vector Addition System</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                <strong>Qizhe Yang</strong>
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2022</span>
+                PhD Thesis
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-8">Abstract</a>
+                
+                
+                <a href="docs/thesis.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o"></i> PDF
+                </a>
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-8">
+            This thesis first focuses on the vector addition system. Based on the discussion of the existing work, we propose some new understanding of the reachability problem, which will help future research. Next, we focus on the nondeterministic computation; we carry out a quantitative study of the complexity of nondeterminism. The main contributions include: a summary of existing work on VAS reachability, coverability, and boundedness; a new understanding of the KLMST algorithm via decomposition-dimension reduction; and results on the growth rate of C-graphs characterizing worst-case branching time complexity.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Counting Nondeterministic Computations</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                Yuxi Fu, <strong>Qizhe Yang</strong>
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2022</span>
+                Theoretical Computer Science, Volume 897, 2 January 2022, Pages 49–63
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-1-9">Abstract</a>
+                
+                
+                <a href="docs/CountingNondeterministicComputations.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o"></i> PDF
+                </a>
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-1-9">
+            The structure of nondeterministic computations is extremely complicated. C-graphs are abstract representations of the branching structure of nondeterministic computations. The paper investigates the structure of finite state nondeterministic computations by showing that the complexity of the structure increases non-elementarily while the number of computation steps increases. This is achieved by establishing a recursive equation relating the number of C-graphs of a certain height to the number of C-graphs of smaller height.
+        </div>
+        
+    </div>
+    
+    
 
-    <!-- jQuery -->
-    <!--<script src="js/jquery.js"></script>-->
+    
+    <hr class="divider" style="margin: 40px 0;">
+    
+    
+    
+    
+    
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <h1 class="section-heading">Computer Vision</h1>
+
+    
+
+    
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>DeRestormer: Revisit versatile image restoration via deformable attention mechanism</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                Xiao Lin, Yilin Chen, Wei Huang, <strong>Qizhe Yang</strong>, Jingyu Gong<sup>†</sup>
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2026</span>
+                Pattern Recognition, vol. 177, p. 113345, 2026
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-2-1">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-2-1">
+            Image restoration still poses significant challenges due to the complexity and diversity of real-world degradations. However, such degradations often manifest as spatially non-uniform, locally concentrated, and irregular patterns, which calls for a restoration model that can adapt its feature sampling to the underlying degradation geometry while remaining computationally efficient. In this paper, we design a novel image restoration framework built on a deformable restoration Transformer, termed DeRestormer. DeRestormer adapts to irregular but localized degradations via deformable attention, where a small set of sampling positions is learned to pre-filter and highlight key elements, so the model can better focus on informative regions and handle complex degradation patterns efficiently. In addition, we incorporate deformable convolutions at the bottleneck stage to dynamically adjust sampling locations across different scales, thus facilitating flexible multi-scale aggregation and effective integration of fine-grained details and global context. Extensive experiments on 13 datasets across 4 tasks demonstrate the effectiveness of DeRestormer, since it achieves state-of-the-art performance across a wide range of image restoration scenarios.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Dynamic patch-level contrastive learning for image dehazing</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Xiao Lin, Dongchen Zhang, Yan Li<sup>†</sup>, <strong>Qizhe Yang</strong>, Ping Li, Wei Huang
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2026</span>
+                Pattern Recognition, vol. 179, 2026
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-2-2">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-2-2">
+            Haze removal remains a challenging problem, especially in complex scenarios involving occlusion and varying fog intensities. Most existing methods perform well on specific datasets or scenes. However, they often fail to generalize because they focus only on haze regions, ignoring their interaction with surrounding objects. To address this issue, we propose a contrastive learning framework that works dynamically at the patch level. It captures the relationships between hazy and haze-free regions to handle varying fog intensities. The framework uses brightness differences between hazy and haze-free images to evaluate fog intensity. Based on this evaluation, the framework dynamically selects appropriate positive and negative samples, enhancing the model's flexibility and efficacy. To further improve the robustness, we adopt a gray-scale image processing mechanism to convert RGB images to grayscale images. This reduces the light source interference and enables the network to focus on structural and contrast details. In addition, our novel feature extraction module combines long-range and short-range attention mechanisms to preserve the structural integrity of neighboring patches while modeling long-range dependencies. Experimental results show that our method can achieve better performance than that of the state-of-the-art approaches.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Multi-window uncertainty-guided network for lung nodule CT segmentation</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                Xiao Lin, Jianping Wang, Qiuli Wang, <strong>Qizhe Yang</strong><sup>†</sup>, Lan Yi<sup>†</sup>
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2025</span>
+                Alexandria Engineering Journal, March 2025
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-2-3">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-2-3">
+            Accurate segmentation of lung nodules from computed tomography (CT) scans is crucial for lung cancer prevention and early diagnosis. However, this task is challenging due to the varying sizes, irregular shapes, inconsistent densities of lung nodules, and the visual similarity between nodules and surrounding tissues. To overcome these challenges, we propose a novel Multi-Window Uncertainty-Guided Segmentation Network (MUS-Net). This network learns diverse features of lung nodules from CT images under different window settings, enhancing segmentation accuracy. Specifically, we introduce an uncertainty indication module that provides Multi-Window Mask (MWM), effectively combining segmentation predictions from lung and mediastinal window settings. This innovative approach allows the network to identify regions of varying segmentation uncertainty, thereby enhancing the model's sensitivity to complex nodule boundaries and density variations. Furthermore, we incorporate a feature filter module to specifically enhance the learning of features from images under different window settings. Our extensive experiments on the LIDC-IDRI dataset demonstrate that our MUS-Net outperforms existing methods, significantly improving segmentation accuracy and robustness against nodule variability.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Multiple weather degraded image restoration based on multi-component decomposition</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Xiao Lin, Yilin Chen, Duojiu Xu, <strong>Qizhe Yang</strong><sup>†</sup>, Yan Li, Wei Huang, Ping Li
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2025</span>
+                Pattern Recognition, vol. 165, Article 111669, 2025
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-2-4">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-2-4">
+            Traditional single-model approaches can achieve good performance in single-weather-affected images, but usually fail to restore real-world degraded images. This can be attributed to their reliance on weather-specific priors, while real-world weather degradation is typically caused by a combination of weather conditions. To address this limitation, we propose a Multi-Component Decomposition Network (MCD-Net), introducing a novel three-component prior designed to represent background content, primary degradation masks, and residual degradations separately. The proposed network employs multiple attention-guided branches to disentangle different degradation components from the multi-scale features extracted by the Transformer-based trunk network. Then the trunk output is decomposed into grouped features and dynamically assigned to branches with a fully connected layer to jointly estimate the clean background and the degraded input. Comprehensive experiments on four types of single-weather datasets and one multiple-weather degraded dataset validate that our MCD-Net significantly outperforms state-of-the-art methods, especially under challenging mixed-weather conditions.
+        </div>
+        
+    </div>
+    
+    
+
+    
+    <hr class="divider" style="margin: 40px 0;">
+    
+    
+    
+    
+    
+
+    <h1 class="section-heading">Trustworthy AI</h1>
+
+    
+
+    
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>Genre-aware automated essay scoring: enhancing accuracy and feedback generation</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                Xiao Lin<sup>#</sup>, Yifan Yang<sup>#</sup>, Xueying Wang, <strong>Qizhe Yang</strong><sup>†</sup>
+            </p>
+            
+            <p class="pub-notation">
+                <sup>#</sup>Co-first author
+                 &nbsp;&middot;&nbsp; 
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2026</span>
+                The Visual Computer, Springer, 2026
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-3-1">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-3-1">
+            English writing assessment plays a pivotal role in language learning, yet manual scoring is labour-intensive and subjective. Automated essay scoring (AES) systems offer objective and scalable solutions. However, existing AES models often overlook genre-specific traits, limiting their accuracy. This paper introduces a genre-aware AES approach that integrates BERT for feature extraction and LSTM for trait scoring, alongside a large language model (ChatGLM) for feedback generation. Experiments on the ASAP dataset demonstrate our model's superior performance, achieving a Quadratic Weighted Kappa (QWK) score of 0.794. This approach not only enhances scoring accuracy but also provides constructive, genre-specific feedback, supporting students' writing development.
+        </div>
+        
+    </div>
+    
+    <div class="publication-entry">
+        <div class="publication-header">
+            <h4>A Two-Stage Active Cleaning Strategy for Long-Tail Label Noise</h4>
+            <p class="pub-authors">
+                
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                
+                Xiao Lin, Zeyu Rong, Yan Li<sup>†</sup>, <strong>Qizhe Yang</strong>, Ping Li, Wei Huang
+            </p>
+            
+            <p class="pub-notation">
+                
+                
+                <sup>†</sup>Corresponding author
+            </p>
+            
+            <p class="pub-venue">
+                <span class="pub-year-badge">2026</span>
+                Neural Networks, vol. 198, p. 108585, 2026
+            </p>
+            <div class="pub-links">
+                
+                <a href="#" class="abstract-toggle" data-target="#abstract-3-2">Abstract</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="pub-abstract" id="abstract-3-2">
+            Long-tailed data is ubiquitous in real-world applications, posing significant challenges due to imbalanced class distribution and high levels of label noise. Previous methods to address long-tailed data with label noise often incur high computational and manual costs. To address these challenges, we propose a novel two-stage active label cleaning strategy, which extends active learning beyond traditional label acquisition to efficiently identify and correct mislabeled samples while minimizing annotation cost. Specifically, in the first stage, we propose a Balanced Class-Centered Contrastive Learning (BCCL) to enhance feature representation quality and identify potential label noise within long-tailed datasets. BCCL achieves this through a novel loss function that integrates contrastive learning with weighted average of class centers. The second stage employs an uncertainty-based active learning sorted sampling to retrain on potential label noise samples, focusing on high-uncertainty instances to determine the final noise samples needing to be relabeled. Our two-stage active label cleaning strategy minimizes the amount of data requiring re-annotation, ultimately improving classification performance through iterative re-labeling, while optimizing the use of annotation resources and reducing the annotation workload. Experimental results demonstrate the robustness of our proposed method across varying noise ratios and levels of imbalance, effectively enhancing discriminative capability on noisy data in multiple datasets and achieving superior classification performance on long-tailed data, particularly in high-noise scenarios.
+        </div>
+        
+    </div>
+    
+    
+
+    
+    
+
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <span>Last updated: Jun 2026</span>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="index.html">
+            <img src="pics/footer_logo.png" alt="logo" width="28" height="28">
+        </a>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Collapse toggle for abstracts and intros -->
+<script>
+$(document).on('click', '.abstract-toggle', function(e) {
+    e.preventDefault();
+    var target = $(this).data('target');
+    var $body = $(target);
+    var $link = $(this);
+    if ($body.hasClass('show')) {
+        $body.removeClass('show');
+        $link.text('Abstract');
+    } else {
+        $body.addClass('show');
+        $link.text('Hide Abstract');
+    }
+});
+
+$(document).on('click', '.intro-toggle', function(e) {
+    e.preventDefault();
+    var target = $(this).data('target');
+    var $body = $(target);
+    var $link = $(this);
+    if ($body.hasClass('show')) {
+        $body.removeClass('show');
+        $link.text('Introduction');
+    } else {
+        $body.addClass('show');
+        $link.text('Hide Introduction');
+    }
+});
+</script>
+
 
 </body>
-
 </html>
